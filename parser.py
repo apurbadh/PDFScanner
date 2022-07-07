@@ -20,6 +20,8 @@ class PDFParser:
         data = read_pdf(self.file, pages="all")
         df = data[0]
 
+        df = df[df[0].notna()]
+
         df = df.dropna(how="all")
         df = df.dropna(axis=1, how="all")
 
