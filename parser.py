@@ -1,8 +1,6 @@
 import sys
 from tabula import read_pdf
 
-
-
 class PDFParser:
 
     def __init__(self, file):
@@ -42,11 +40,5 @@ class PDFParser:
 
         self.dataframe.to_csv(filename)
 
-
-        
-
-
-
-        
 
         
