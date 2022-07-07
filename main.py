@@ -14,21 +14,11 @@ except KeyError:
     sys.exit(-1)
 
 
-
 def main():
-    file = open(PATH, "rb")
 
-    try:
-        file = open(PATH, "rb")
-
-    except FileNotFoundError:
-        print("Error: The file doesn't exist in the given folder")
-        print("Please change the .env and try again")
-        sys.exit(-1)
-
-    parser = PDFParser(file)
+    parser = PDFParser(PATH)
     parser.parse()
-    parser.printData()
+    parser.export_csv("test.csv")
 
 
 
