@@ -11,6 +11,7 @@ try:
 except KeyError:
     print("Error: The values in .env doesn't exist")
     print("Please create the .env file or fill 'FILE_NAME' and 'FOLDER_NAME' for location in it")
+    print("Yes Please do it")
     sys.exit(-1)
 
 
